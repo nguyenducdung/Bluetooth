@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Bluetooth</string>
+    <string name="do_nhiet_do">Đo nhiệt độ, độ ẩm</string>
+    <string name="nhiet_do">Nhiệt độ :</string>
+    <string name="do_am">Độ ẩm :</string>
 </resources>
