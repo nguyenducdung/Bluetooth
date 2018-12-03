@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <TextView
+        android:id="@+id/tv_2"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"
+        android:text="@string/devices"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_toStartOf="@id/tv_2"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/btn"
+        android:textAllCaps="false"
+        android:text="@string/turn_on"
+        android:id="@+id/btn_open"
+        android:layout_below="@id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="@dimen/margin"
+        android:layout_below="@id/tv_2"
+        android:layout_toEndOf="@id/tv_2"
+        android:textAllCaps="false"
+        android:id="@+id/btn_off"
+        android:text="@string/turn_off"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_list"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_below="@id/btn_off"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

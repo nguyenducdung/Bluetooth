@@ -3,4 +3,8 @@
     <string name="do_nhiet_do">Đo nhiệt độ, độ ẩm</string>
     <string name="nhiet_do">Nhiệt độ :</string>
     <string name="do_am">Độ ẩm :</string>
+    <string name="devices">Devices</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="address">Address</string>
 </resources>
